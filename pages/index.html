@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1999357_p6997645gqm.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1999357_08p90ff0zj9f.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="../styles/main.css" />
   <link rel="stylesheet" type="text/css" href="../styles/reset.css" />
   <link rel="stylesheet" type="text/css" href="../styles/common.css" />
@@ -31,34 +31,61 @@
         <div class="about float-r">关于我们</div>
       </div>
     </div>
-    <!-- 第一屏区域 -->
+    <!-- 全部商品 -->
 
 
     <div class="wrapper">
+      <!-- 第一屏区域 -->
       <div class="firstScreenWrap">
         <div class="firstScreen">
+          <!-- 分类列表 -->
           <div class="category float-l">
             <div class="category1">
-              <h3>美妆个护</h3>
-              <p>面膜 / 防晒 / 面部护理套装</p>
+              <dt>
+                <h3>美妆个护</h3>
+                <p>面膜 / 防晒 / 面部护理套装</p>
+              </dt>
+              <dd class="double"><span class="closeDouble">X</span>
+                <!-- ----------------------------------------------------------------
+                <div class="categoryBlock">
+                  <div class="categoryTitle"></div><hr>
+                  <span class="categories"></span>
+                </div> 
+                ------------------------------------------------------------------ -->
+              </dd>
             </div>
             <div class="category2">
-              <h3>食品保健</h3>
-              <p>代餐奶昔 / 酵素 / 葡萄酒</p>
+              <dt>
+                <h3>食品保健</h3>
+                <p>代餐奶昔 / 酵素 / 葡萄酒</p>
+              </dt>
+              <dd class="double"><span class="closeDouble">X</span></dd>
             </div>
             <div class="category3">
-              <h3>母婴用品</h3>
-              <p>奶粉 / 纸尿裤 / 钙铁锌</p>
+              <dt>
+                <h3>母婴用品</h3>
+                <p>奶粉 / 纸尿裤 / 钙铁锌</p>
+              </dt>
+              <dd class="double"><span class="closeDouble">X</span></dd>
             </div>
             <div class="category4">
-              <h3>服饰鞋包</h3>
-              <p>手表 / 运动鞋 / 箱包</p>
+              <dt>
+                <h3>服饰鞋包</h3>
+                <p>手表 / 运动鞋 / 箱包</p>
+              </dt>
+              <dd class="double"><span class="closeDouble">X</span></dd>
             </div>
             <div class="category5">
-              <h3>生活/数码</h3>
-              <p> 滤水壶 / 滤芯 / 扫地机器人</p>
+              <dt>
+                <h3>生活/数码</h3>
+                <p> 滤水壶 / 滤芯 / 扫地机器人</p>
+              </dt>
+              <dd class="double"><span class="closeDouble">X</span></dd>
             </div>
           </div>
+          <!-- 分类列表 -->
+
+          <!-- 轮播图 -->
           <div class="slideshow float-l">
             <div class="swiper-container">
               <div class="swiper-wrapper">
@@ -70,15 +97,14 @@
               </div>
               <!-- 如果需要分页器 -->
               <div class="swiper-pagination"></div>
-  
               <!-- 如果需要导航按钮 -->
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
-  
-              <!-- 如果需要滚动条 -->
-              <!-- <div class="swiper-scrollbar"></div> -->
             </div>
           </div>
+          <!-- 轮播图 -->
+
+          <!-- 二维码 -->
           <div class="QRCode float-l">
             <p class="pickUP-zh">挑货</p>
             <p class="pickUP-en">Pick UP</p>
@@ -87,99 +113,71 @@
             <p class="pickGlobal">挑遍全球好物</p>
             <p class="pickDesc">从源头开始严格把关确保100%正品！</p>
           </div>
+          <!-- 二维码 -->
+        </div>
+      </div>
+      <!-- 第一屏区域 -->
+
+      <!-- 全球精选 -->
+      <div class="globalSelectionWrap">
+        <div class="globalSelection">
+          <img src="../images/globalSelectionPic.webp" alt="">
+          <p><a href="#">更多<span class="iconfont icon-right"></span></a></p>
+        </div>
+      </div>
+      <!-- 全球精选 -->
+
+      <div class="discountWrap">
+        <div class="discount">
+          <div>
+            <img src="../images/discount1.webp">
+
+            <div class="discountMeta">
+              <span class="discountTxt">海外品牌</span>
+              <span class="discountTitle">资生堂FINO美容复合精华洗护套装</span>
+              <div class="discountTitle-des">深层渗透滋养顺滑，令秀发柔顺亮泽，一梳到底,2大美容液精华 改善干枯、出油、毛躁、异味、黯哑,品牌旗舰店，100%正品保障，保税仓发货，急速直达</div>
+            </div>
+
+            <!-- <div class="pb-content">
+              <div class="right">
+                <div class="price">
+                  <span class="act">
+                    <span class="rmb">¥</span>
+                    <span class="big">142</span>
+                  </span>
+                  <span class="tag gray"><span class="rmb">¥</span>236.00</span>
+                </div>
+                <span class="sold">已售2017件</span>
+              </div>
+              <a class="btn doing"
+                href="//detail.ju.taobao.com/home.htm?spm=a2231.7718719.7176595460.3.4a5c12fetfL3HC&amp;id=10002094303317&amp;item_id=562934968982"
+                data-spm-anchor-id="a2231.7718719.7176595460.3">马上抢</a>
+            </div> -->
+
+          </div>
+          <div><img src="../images/discount2.webp"></div>
+          <div><img src="../images/discount3.webp"></div>
+          <div><img src="../images/discount4.webp"></div>
+          <div><img src="../images/discount5.webp"></div>
         </div>
       </div>
 
-      <div class="globalSelectionWrap">
-        <div class="globalSelection">
-          
-        </div>
-      </div>
+
+
+
+
 
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- JS导入 -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script src="../script/main.js"></script>
     <script>
+      // 加载公共模块  》》》 -- 头部 --   -- 搜索区 --
       $('.topBarWrap').load("./topBar.html");
       $('.searchAreaWrap').load("./searchArea.html");
     </script>
-
-    <script>
-      var mySwiper = new Swiper('.swiper-container', {
-        direction: 'horizontal', // 垂直切换选项
-        autoplay: {
-          delay: 3000, //1秒切换一次
-          disableOnInteraction: false,
-        },
-        loop: true, // 循环模式选项
-
-        // 如果需要分页器
-
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-
-        // 如果需要前进后退按钮
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      })
-      for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
-        mySwiper.pagination.bullets[i].onmouseover = function () {
-          this.click();
-        };
-      }
-
-      $('.swiper-container').hover(()=>{
-        console.log(111);
-        $('.swiper-button-prev').stop().animate({
-          left:'0px',
-          opacity:'0.7',
-        },"fast");
-        $('.swiper-button-next').stop().animate({
-          right:'0px',
-          opacity:'0.7',
-        },"fast");
-      },()=>{
-        console.log(222);
-        $('.swiper-button-prev').stop().animate({
-          left:'-34px',
-          opacity:'0.2',
-        },"fast");
-        $('.swiper-button-next').stop().animate({
-          right:'-34px',
-          opacity:'0.2',
-        },"fast");
-      })
-    </script>
-
   </body>
 
 </html>
