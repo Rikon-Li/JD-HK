@@ -1,0 +1,5 @@
+.allGoodsWrap, .firstScreenWrap{min-width: 1190px;}
+.allGoods, .firstScreen{width: 1190px;margin: 0 auto;};
+
+.topBarWrap, .searchAreaWrap{min-width: 990px;}
+.topBar, .searchArea{width: 990px;margin: 0 auto;};

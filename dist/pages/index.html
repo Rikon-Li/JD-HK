@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1999357_p6997645gqm.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/common.css" />
+
+<body>
+  </head>
+
+  <body>
+    <!-- 首页上栏 -->
+    <div class="topBarWrap"></div>
+    <!-- Logo及搜索区 -->
+    <div class="searchAreaWrap"></div>
+    <!-- 全部商品 -->
+    <div class="allGoodsWrap">
+      <div class="allGoods">
+        <div class="allGoodsL float-l">全部商品分类</div>
+        <ul class="allGoodsM float-l">
+          <li>首页</li>
+          <li>全球精选</li>
+          <li>进口超市</li>
+        </ul>
+        <div class="about float-r">关于我们</div>
+      </div>
+    </div>
+    <!-- 第一屏区域 -->
+    <div class="firstScreenWrap">
+      <div class="firstScreen">
+        <div class="category float-l">
+          <div class="category1">
+            <h3>美妆个护</h3>
+            <p>面膜 / 防晒 / 面部护理套装</p>
+          </div>
+          <div class="category2">
+            <h3>食品保健</h3>
+            <p>代餐奶昔 / 酵素 / 葡萄酒</p>
+          </div>
+          <div class="category3">
+            <h3>母婴用品</h3>
+            <p>奶粉 / 纸尿裤 / 钙铁锌</p>
+          </div>
+          <div class="category4">
+            <h3>服饰鞋包</h3>
+            <p>手表 / 运动鞋 / 箱包</p>
+          </div>
+          <div class="category5">
+            <h3>生活/数码</h3>
+            <p> 滤水壶 / 滤芯 / 扫地机器人</p>
+          </div>
+        </div>
+        <div class="slideshow float-l">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+        </div>
+        <div class="QRCode float-l">
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script>
+      $('.topBarWrap').load("./topBar.html");
+      $('.searchAreaWrap').load("./searchArea.html");
+    </script>
+
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        autoplay: {
+          delay: 3000, //1秒切换一次
+        },
+        loop: true, // 循环模式选项
+        
+        // 如果需要分页器
+        
+        pagination :{
+        el: '.swiper-pagination',
+        clickable :true,
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
+      for(i=0;i<mySwiper.pagination.bullets.length;i++){
+  mySwiper.pagination.bullets[i].onmouseover=function(){
+    this.click();
+  };
+} 
+    </script>
+
+  </body>
+
+</html>
