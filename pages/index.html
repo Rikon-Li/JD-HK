@@ -32,55 +32,91 @@
       </div>
     </div>
     <!-- 第一屏区域 -->
-    <div class="firstScreenWrap">
-      <div class="firstScreen">
-        <div class="category float-l">
-          <div class="category1">
-            <h3>美妆个护</h3>
-            <p>面膜 / 防晒 / 面部护理套装</p>
-          </div>
-          <div class="category2">
-            <h3>食品保健</h3>
-            <p>代餐奶昔 / 酵素 / 葡萄酒</p>
-          </div>
-          <div class="category3">
-            <h3>母婴用品</h3>
-            <p>奶粉 / 纸尿裤 / 钙铁锌</p>
-          </div>
-          <div class="category4">
-            <h3>服饰鞋包</h3>
-            <p>手表 / 运动鞋 / 箱包</p>
-          </div>
-          <div class="category5">
-            <h3>生活/数码</h3>
-            <p> 滤水壶 / 滤芯 / 扫地机器人</p>
-          </div>
-        </div>
-        <div class="slideshow float-l">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
+
+
+    <div class="wrapper">
+      <div class="firstScreenWrap">
+        <div class="firstScreen">
+          <div class="category float-l">
+            <div class="category1">
+              <h3>美妆个护</h3>
+              <p>面膜 / 防晒 / 面部护理套装</p>
             </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination"></div>
-
-            <!-- 如果需要导航按钮 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- 如果需要滚动条 -->
-            <!-- <div class="swiper-scrollbar"></div> -->
+            <div class="category2">
+              <h3>食品保健</h3>
+              <p>代餐奶昔 / 酵素 / 葡萄酒</p>
+            </div>
+            <div class="category3">
+              <h3>母婴用品</h3>
+              <p>奶粉 / 纸尿裤 / 钙铁锌</p>
+            </div>
+            <div class="category4">
+              <h3>服饰鞋包</h3>
+              <p>手表 / 运动鞋 / 箱包</p>
+            </div>
+            <div class="category5">
+              <h3>生活/数码</h3>
+              <p> 滤水壶 / 滤芯 / 扫地机器人</p>
+            </div>
           </div>
-        </div>
-        <div class="QRCode float-l">
-
+          <div class="slideshow float-l">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/swiper1.webp" alt=""></div>
+                <div class="swiper-slide"><img src="../images/swiper2.webp" alt=""></div>
+                <div class="swiper-slide"><img src="../images/swiper3.webp" alt=""></div>
+                <div class="swiper-slide"><img src="../images/swiper4.webp" alt=""></div>
+                <div class="swiper-slide"><img src="../images/swiper5.webp" alt=""></div>
+              </div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+  
+              <!-- 如果需要导航按钮 -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+  
+              <!-- 如果需要滚动条 -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+          </div>
+          <div class="QRCode float-l">
+            <p class="pickUP-zh">挑货</p>
+            <p class="pickUP-en">Pick UP</p>
+            <img class="pickUPWW" src="../images/PickUPWW.jpg" alt="">
+            <img class="pickUPQR" src="../images/PickUPQR.jpg" alt="">
+            <p class="pickGlobal">挑遍全球好物</p>
+            <p class="pickDesc">从源头开始严格把关确保100%正品！</p>
+          </div>
         </div>
       </div>
+
+      <div class="globalSelectionWrap">
+        <div class="globalSelection">
+          
+        </div>
+      </div>
+
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -98,14 +134,15 @@
         direction: 'horizontal', // 垂直切换选项
         autoplay: {
           delay: 3000, //1秒切换一次
+          disableOnInteraction: false,
         },
         loop: true, // 循环模式选项
-        
+
         // 如果需要分页器
-        
-        pagination :{
-        el: '.swiper-pagination',
-        clickable :true,
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
         },
 
         // 如果需要前进后退按钮
@@ -114,11 +151,33 @@
           prevEl: '.swiper-button-prev',
         },
       })
-      for(i=0;i<mySwiper.pagination.bullets.length;i++){
-  mySwiper.pagination.bullets[i].onmouseover=function(){
-    this.click();
-  };
-} 
+      for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
+        mySwiper.pagination.bullets[i].onmouseover = function () {
+          this.click();
+        };
+      }
+
+      $('.swiper-container').hover(()=>{
+        console.log(111);
+        $('.swiper-button-prev').stop().animate({
+          left:'0px',
+          opacity:'0.7',
+        },"fast");
+        $('.swiper-button-next').stop().animate({
+          right:'0px',
+          opacity:'0.7',
+        },"fast");
+      },()=>{
+        console.log(222);
+        $('.swiper-button-prev').stop().animate({
+          left:'-34px',
+          opacity:'0.2',
+        },"fast");
+        $('.swiper-button-next').stop().animate({
+          right:'-34px',
+          opacity:'0.2',
+        },"fast");
+      })
     </script>
 
   </body>
