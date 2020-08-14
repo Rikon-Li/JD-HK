@@ -26,7 +26,6 @@
         position: absolute;
         top: 90px;
         right: 240px;
-
         width: 350px;
         height: 405px;
         background: #fff;
@@ -41,6 +40,23 @@
             padding-top: 8px;
             font-weight: 700;
             border-bottom: 2px solid #000;
+        }
+        .inputArea{
+            height: 42px;
+            width: 250px;
+            background-color: #f00;
+            border: 1px solid #CCC;
+            box-sizing: border-box;
+            color: #f1eeee;
+            label{
+                float: left;
+                height: 40px;
+                width: 40px;
+                background: #0f0;
+            }
+            // input{
+            //     height: 40px;
+            // }
         }
     }
 
