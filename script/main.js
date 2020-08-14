@@ -1,3 +1,4 @@
+// 轮播图
 var mySwiper = new Swiper('.swiper-container', {
   direction: 'horizontal', // 垂直切换选项
   autoplay: {
@@ -5,14 +6,11 @@ var mySwiper = new Swiper('.swiper-container', {
     disableOnInteraction: false,
   },
   loop: true, // 循环模式选项
-
   // 如果需要分页器
-
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-
   // 如果需要前进后退按钮
   navigation: {
     nextEl: '.swiper-button-next',
@@ -24,7 +22,9 @@ for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
     this.click();
   };
 }
+// 轮播图
 
+// 轮播图按键显示隐藏
 $('.swiper-container').hover(() => {
   $('.swiper-button-prev').stop().animate({
     left: '0px',
@@ -44,8 +44,9 @@ $('.swiper-container').hover(() => {
     opacity: '0.2',
   }, "fast");
 })
+// 轮播图按键显示隐藏
 
-
+// 类别栏显示隐藏
 $('.category>div').hover(function () {
   $(this).find('.double').show();
   // console.log(this);
@@ -57,11 +58,10 @@ $('.closeDouble').on('click', function () {
   $(this).parent().hide();
   console.log();
 })
+// 类别栏显示隐藏
 
 
-
-
-
+//导入类别栏
 $.ajax({
   url: "../data/double.json",
   type: "get",
@@ -89,10 +89,48 @@ $.ajax({
           newli += `<a>${a}</a>`;
         })
         $(`.category${index+1} .categories${num}`).append(newli);
-        console.log(newli);
+        // console.log(newli);
         // console.log();
       })
     })
     // console.log(json[0]);
   }
 })
+//导入类别栏
+
+// 导入打折商品
+$.ajax({
+  url: '../data/discount.json',
+  type: "get",
+  data: " ",
+  dataType: "json",
+  success: function(json){
+    $.each(json,function(index,val){
+      var discountDiv = '';
+      discountDiv = `
+      <div class="discount${index}">
+        <img class="discountPic" src="${val.imgUrl}">
+        <div class="discountMeta">
+          <span class="discountTxt">海外品牌</span>
+          <span class="discountTitle">${val.title}</span>
+          <div class="discountTitle-des">${val.des}</div>
+        </div>
+        <div class="priceLeft float-l">
+          <div class="price">
+            <span class="act">
+              <span class="rmb">¥</span>
+              <span class="big">${val.priceNow}</span>
+            </span>
+            <span class="tag gray"><span class="rmb">¥</span class="priceEver">${val.priceEver}</span>
+          </div>
+          <span class="sold">已售<span class="soldNum">${val.soldNum}</span>件</span>
+        </div>
+        <a class="buyNow float-r">马上抢</a>
+      </div>
+      `
+      $('.discount').append(discountDiv);
+    });
+  }
+})
+// 导入打折商品
+
