@@ -1,5 +1,5 @@
 // 轮播图
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.mainSwiper', {
   direction: 'horizontal', // 垂直切换选项
   autoplay: {
     delay: 3000, //1秒切换一次
@@ -25,21 +25,21 @@ for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
 // 轮播图
 
 // 轮播图按键显示隐藏
-$('.swiper-container').hover(() => {
-  $('.swiper-button-prev').stop().animate({
+$('.mainSwiper').hover(() => {
+  $('.mainSwiper .swiper-button-prev').stop().animate({
     left: '0px',
     opacity: '0.7',
   }, "fast");
-  $('.swiper-button-next').stop().animate({
+  $('.mainSwiper .swiper-button-next').stop().animate({
     right: '0px',
     opacity: '0.7',
   }, "fast");
 }, () => {
-  $('.swiper-button-prev').stop().animate({
+  $('.mainSwiper .swiper-button-prev').stop().animate({
     left: '-34px',
     opacity: '0.2',
   }, "fast");
-  $('.swiper-button-next').stop().animate({
+  $('.mainSwiper .swiper-button-next').stop().animate({
     right: '-34px',
     opacity: '0.2',
   }, "fast");
@@ -104,8 +104,8 @@ $.ajax({
   type: "get",
   data: " ",
   dataType: "json",
-  success: function(json){
-    $.each(json,function(index,val){
+  success: function (json) {
+    $.each(json, function (index, val) {
       var discountDiv = '';
       discountDiv = `
       <div class="discount${index}">
@@ -134,3 +134,31 @@ $.ajax({
 })
 // 导入打折商品
 
+
+
+$('.item').hover(function() {
+ 
+  $(this).find('img').css('transform','translate(-5px)')
+},function() {
+
+  $(this).find('img').css('transform','translate(5px)')
+
+})
+
+
+
+var mySwiper = new Swiper('.moduleSwiper', {
+  direction: 'horizontal', // 垂直切换选项
+  loop: true,
+  autoplay: {
+    delay: 3000,//1秒切换一次
+  },
+  // 如果需要分页器
+  pagination :{
+    el: '.swiper-pagination',
+    clickable :true,
+    
+
+  }
+
+})
