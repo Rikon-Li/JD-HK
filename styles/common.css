@@ -8,7 +8,8 @@
 .beautyWrap,
 .loginTopWrap,
 .loginMiddleWrap,
-.loginBottomWrap
+.loginBottomWrap,
+.dysonsearchAreaWrap
 {min-width: 1190px;}
 
 .allGoods, 
@@ -19,8 +20,7 @@
 .beauty,
 .loginTop,
 .loginMiddle,
-.loginBottom
+.loginBottom,
+.dysonsearchArea
 {width: 1190px; margin: 0 auto;};
 
-.topBarWrap, .searchAreaWrap{min-width: 990px;}
-.topBar, .searchArea{width: 990px;margin: 0 auto;};
