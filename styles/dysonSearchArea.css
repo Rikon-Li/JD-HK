@@ -1,4 +1,46 @@
 .dysonsearchArea{
-    height: 85px;
     background: #000;
+    height: 60px;
+    padding-top:15px;
+    
+}
+
+.mainLogo{
+    height: 40px;
+    width: 116px;
+    background: url(/../images/searchLogo.png) no-repeat;
+    background-size: 109px 40px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.shopName{
+    background: #f00;
+    
+}
+
+.searchGoods, .searchGoodsBtn{
+    height: 36px;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+}
+.searchGoods{
+    width: 350px;
+    border:3px solid #7A44E5;
+    cursor: text;
+    box-shadow: 0px 3px 3px -1px #aaa inset;
+    font-size: 12px;
+    color: #666;
+    text-indent: 8px;
+}
+.searchGoodsBtn{
+    width: 90px;
+    border:0;
+    background: -webkit-linear-gradient(left,#7A44E5,#B23CEF);
+    background: linear-gradient(left,#7A44E5,#B23CEF);
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 4px;
+    cursor: pointer;
 }
