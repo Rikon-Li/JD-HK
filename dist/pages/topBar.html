@@ -1,11 +1,11 @@
-<link rel="stylesheet" type="text/css" href="../styles//topBar.css"/>
+<link rel="stylesheet" type="text/css" href="../styles/topBar.css"/>
 <body>
 <div class="topBar">
     <ul class="topBar_left">
         <li><span class="iconfont icon-home-copy"></span>
             天猫首页</li>
         <li class="miao">喵，欢迎来天猫国际</li>
-        <li>请登录</li>
+        <li><a class="change" href="./login.html">请登录</a></li>
     </ul>
     <ul class="topBar_right">
         <li class="myTB">我的淘宝<span class="iconfont icon-down"></span>
@@ -52,6 +52,13 @@
     </ul>
 </div>
 <script>
+var usr = localStorage.getItem('user');
+// alert(usr);
+if (usr) {
+    $('.miao').text('Hi,').after(`<li>${usr}</li>`);
+    $('.change').text('退出');
+}
+$('.change').click(()=>{localStorage.removeItem('user')});
 
 $(".myTB").hover(
    function () {

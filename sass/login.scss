@@ -14,15 +14,17 @@
         margin: 9px 10px;
     }
 }
-.loginMiddleWrap{
+
+.loginMiddleWrap {
     background: #7A32EE;
     position: relative;
-    .loginMiddle{
+
+    .loginMiddle {
         height: 600px;
     }
-    
 
-    .loginBox{
+
+    .loginBox {
         position: absolute;
         top: 90px;
         right: 240px;
@@ -31,7 +33,9 @@
         background: #fff;
         padding: 25px 25px 23px;
         box-sizing: border-box;
-        .loginBoxTitle{
+
+        .loginBoxTitle,
+        .registerBoxTitle {
             display: inline-block;
             height: 18px;
             line-height: 5px;
@@ -39,50 +43,111 @@
             color: #3c3c3c;
             padding-top: 8px;
             font-weight: 700;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .boxTitle.active{
             border-bottom: 2px solid #000;
         }
-        .inputArea{
-            height: 42px;
-            width: 250px;
-            background-color: #f00;
-            border: 1px solid #CCC;
-            box-sizing: border-box;
-            color: #f1eeee;
-            label{
-                float: left;
-                height: 40px;
-                width: 40px;
-                background: #0f0;
+        .loginArea.show, .registerArea.show{display: block}
+        // .loginArea.hide, .registerArea.hide{display: none}
+        .loginArea, .registerArea {
+            display: none;
+
+            .inputArea {
+                // height: 40px;
+                width: 100%;
+                background-color: #f00;
+                // border: 1px solid #CCC;
+                // box-sizing: border-box;
+                color: #f1eeee;
+                position: relative;
+                margin-top: 20px;
+
+                .labelIcon {
+                    float: left;
+                    height: 40px;
+                    width: 40px;
+                    background: #CCC;
+                    position: absolute;
+                    left: 1px;
+                    top: 1px;
+                }
+
+
+                .registerId,
+                .loginId,
+                .loginPass,
+                .registerPass,
+                .confirmPass {
+                    color: #6c6c6c;
+                    font-size: 14px;
+                    height: 40px;
+                    width: 248px;
+                    border: 1px solid #F1EEEE;
+                    // border-color: #F1EEEE;
+                    outline: none;
+                    padding: 0px;
+                    padding-left: 50px;
+                }
+
+                .labelIcon{
+                    color: #fff;
+                    text-align: center;
+                    line-height: 40px;
+                    .iconfont {
+                        font-size: 20px !important;
+                        // font-style: normal;
+                    }
+                }
+                
             }
-            // input{
-            //     height: 40px;
-            // }
+
+            .login,.register {
+                width: 300px;
+                height: 42px;
+                color: #fff;
+                font-size: 16px;
+                background-color: #ff0036;
+                border: none;
+                border-radius: 3px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+            .loginTools{
+                text-align: right;
+                margin-top: 16px;
+                a{
+                    color: #6c6c6c;
+                    font-size: 12px; 
+                    cursor: pointer;
+                }
+            }
         }
     }
-
-
-
-
 }
-.loginBottomWrap{
+
+.loginBottomWrap {
     margin-top: 40px;
     height: 104px;
-    .loginBottom{
+
+    .loginBottom {
         overflow: hidden;
         padding: 26px 0;
-        ul{    
+
+        ul {
             margin-left: -4px;
             margin-top: 10px;
             margin-bottom: 5px;
-            li{
+
+            li {
                 display: inline-block;
                 font-size: 12px;
                 border-left: 1px solid #c0a6f2;
                 padding: 0 1px 0 4px;
-                line-height: 12px;    
+                line-height: 12px;
                 height: 12px;
             }
         }
     }
 }
-                     

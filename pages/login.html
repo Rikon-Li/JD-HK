@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1999357_oab89bere.css">
     <link rel="stylesheet" type="text/css" href="../styles/login.css">
     <link rel="stylesheet" type="text/css" href="../styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="../styles/common.css" />
@@ -24,12 +25,45 @@
         </div>
 
         <div class="loginBox">
-            <span class="loginBoxTitle">密码登录</span>
-            <div class="inputArea">
-                <label class="labelIcon">a</label>
-                <input type="text" class="loginId" placeholder="会员名/邮箱/手机号">
-            </div>
-            
+            <span class="loginBoxTitle boxTitle active">密码登录</span>
+
+            <span class="registerBoxTitle boxTitle ">免费注册</span>
+
+
+
+            <form action="" class="loginArea show">
+                <div class="inputArea">
+                    <label class="labelIcon"><span class="iconfont icon-user"></label>
+                    <input class="loginId" type="text" placeholder="请输入用户名">
+                </div>
+                <div class="inputArea">
+                    <label class="labelIcon"><span class="iconfont icon-password"></label>
+                    <input class="loginPass" type="password" placeholder="请输入登录密码">
+                </div>
+                <input class="login" type="button" value="登录">
+                <!-- <div class="loginTools">
+                    <a href="">忘记密码</a>
+                    <a href="">忘记用户名</a>
+                    <a href="">免费注册</a>
+                </div> -->
+            </form>
+
+            <form action="" class="registerArea">
+                <div class="inputArea">
+                    <label class="labelIcon"><span class="iconfont icon-user"></label>
+                    <input class="registerId" type="text" placeholder="请输入用户名">
+                </div>
+                <div class="inputArea">
+                    <label class="labelIcon"><span class="iconfont icon-password"></label>
+                    <input class="registerPass" type="password" placeholder="请输入登录密码">
+                </div>
+                <div class="inputArea">
+                    <label class="labelIcon"><span class="iconfont icon-Securitycheck"></label>
+                    <input class="confirmPass" type="password" placeholder="请再次输入登录密码">
+                </div>
+                <input class="register" type="button" value="注册">
+            </form>
+
         </div>
 
     </div>
@@ -46,7 +80,7 @@
                 <li>1688</li>
                 <li>阿里妈妈</li>
                 <li>去啊</li>
-                <li>阿里云计算/li>
+                <li>阿里云计算</li>
                 <li>YunOS</li>
                 <li>阿里通信</li>
                 <li>万网</li>
@@ -63,6 +97,10 @@
             <span>© 2013-2020 Tmall.hk. 版权所有</span>
         </div>
     </div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
 
+<script src="../script/utils.js"></script>
+<script src="../script/login.js"></script>
 </body>
 </html>
+
