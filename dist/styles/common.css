@@ -27,9 +27,11 @@
 {width: 1190px; margin: 0 auto;};
 
 .shopTitleWrap,
-.queryToolsWrap
+.queryToolsWrap,
+.listWrap
 {min-width: 990px;}
 
 .shopTitle,
-.queryTools
+.queryTools,
+.list
 {width: 990px; margin: 0 auto;};

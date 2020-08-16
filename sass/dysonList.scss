@@ -51,9 +51,74 @@
         color: #B10000;
         background: #F1EDEC;
     }
-    .first{
+    .firstTools{
         color: #B10000;
         background: #F1EDEC;
         border: 1px solid #CCCCCC;
+    }
+    input{
+        padding: 0px;
+        width: 45px;
+        height: 22px;
+        float: left;
+        border: 1px solid #CCCCCC;
+        border-radius: 2px;
+        color: #806f66;
+        line-height:22px;
+        cursor: pointer;
+        text-indent: 5px;
+    }
+    .secondTools{
+        margin-left: 8px;
+    }
+    span{
+        width: 10px;
+        height: 22px;
+        float: left;
+        border-top: 1px solid #CCCCCC;
+        border-bottom: 1px solid #CCCCCC;
+        border-radius: 2px;
+        color: #806f66;
+        text-align: center;
+        line-height:22px;
+        cursor: pointer;
+    }
+}
+
+.goods{
+    width: 180px;
+    height: 322px;
+    background-color: #f00;
+    >img{
+        width: 180px;
+        height: 180px;
+    }
+    .goodsSmallPics{
+        // width: 180px;
+        margin: 9px 19px 3px;
+        height: 34px;
+        background-color: #0f0;
+        >img{
+            float: left;
+            margin-right: 2px;
+            // margin:0px;
+            height: 32px;
+            width: 32px;
+            border: 1px solid #CCCCCC;
+        }
+    }
+    .listPrice{
+        color: #c00;
+        font-size: 14px;
+        font-weight: 700;
+        height: 20px;
+        line-height: 20px;
+    }
+    .listTitle{
+        font-size: 12px;
+        margin-top: 20px;
+        line-height: 1.5;
+        height: 36px;
+        overflow: hidden;
     }
 }
