@@ -1,0 +1,59 @@
+.queryToolsWrap{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.queryTools{
+    background: #FAF9F9;
+}
+.searchTools{
+    position: relative;
+    height: 32px;
+    width: 990px;
+    background: #F9F9F9;
+    border: 1px solid #E6E2E1;
+    box-sizing: border-box;
+    padding-left: 25px;
+    line-height: 32px;
+    color: #666;
+    input{
+        padding: 0;
+        margin-left: 10px;
+        height: 18px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        text-indent: 10px;
+        color: #333;
+    }
+    span{
+        position: absolute;
+        left: 215px;
+        top: 3px;
+        cursor: pointer;
+    }
+
+}
+
+.selectTools{
+    padding: 3px;
+    height: 26px;
+
+    div{
+        padding: 0 5px;
+        height: 22px;
+        float: left;
+        border: 1px solid #CCCCCC;
+        color: #806f66;
+        border-left: none;
+        line-height:22px;
+        cursor: pointer;
+    }
+    div:hover{
+        color: #B10000;
+        background: #F1EDEC;
+    }
+    .first{
+        color: #B10000;
+        background: #F1EDEC;
+        border: 1px solid #CCCCCC;
+    }
+}

@@ -2,7 +2,7 @@
 
 <div class="topBar">
     <ul class="topBar_left">
-        <li><span class="iconfont icon-home-copy"></span>
+        <li class="home"><span class="iconfont icon-home-copy"></span>
             天猫首页</li>
         <li class="miao">喵，欢迎来天猫国际</li>
         <li><a class="change" href="./login.html">请登录</a></li>
@@ -60,6 +60,9 @@ if (usr) {
 }
 $('.change').click(()=>{localStorage.removeItem('user')});
 
+$('.home').on('click',function(e) {
+    $(location).attr('href', './index.html');
+})
 $(".myTB").hover(
    function () {
       $('.myTBDrawer').show();

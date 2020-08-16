@@ -26,3 +26,10 @@
 .bottomBar
 {width: 1190px; margin: 0 auto;};
 
+.shopTitleWrap,
+.queryToolsWrap
+{min-width: 990px;}
+
+.shopTitle,
+.queryTools
+{width: 990px; margin: 0 auto;};

@@ -137,12 +137,9 @@ $.ajax({
 
 
 $('.item').hover(function() {
- 
   $(this).find('img').css('transform','translate(-5px)')
 },function() {
-
   $(this).find('img').css('transform','translate(5px)')
-
 })
 
 
