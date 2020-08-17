@@ -10,7 +10,8 @@
 .loginMiddleWrap,
 .loginBottomWrap,
 .dysonsearchAreaWrap,
-.bottomBarWrap
+.bottomBarWrap,
+.detailWrap
 {min-width: 1190px;}
 
 .allGoods, 
@@ -23,7 +24,8 @@
 .loginMiddle,
 .loginBottom,
 .dysonsearchArea,
-.bottomBar
+.bottomBar,
+.detail
 {width: 1190px; margin: 0 auto;};
 
 .shopTitleWrap,
