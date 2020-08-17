@@ -84,41 +84,64 @@
         cursor: pointer;
     }
 }
-
-.goods{
-    width: 180px;
-    height: 322px;
-    background-color: #f00;
-    >img{
+.list{
+    overflow: hidden;
+    .goods{
+        margin: 15px 9px;
+        float: left;
         width: 180px;
-        height: 180px;
-    }
-    .goodsSmallPics{
-        // width: 180px;
-        margin: 9px 19px 3px;
-        height: 34px;
-        background-color: #0f0;
+        height: 322px;
         >img{
-            float: left;
-            margin-right: 2px;
-            // margin:0px;
-            height: 32px;
-            width: 32px;
-            border: 1px solid #CCCCCC;
+            width: 180px;
+            height: 180px;
+            cursor: pointer;
         }
-    }
-    .listPrice{
-        color: #c00;
-        font-size: 14px;
-        font-weight: 700;
-        height: 20px;
-        line-height: 20px;
-    }
-    .listTitle{
-        font-size: 12px;
-        margin-top: 20px;
-        line-height: 1.5;
-        height: 36px;
-        overflow: hidden;
+        .goodsSmallPics{
+            // width: 180px;
+            margin: 9px 19px 3px;
+            height: 34px;
+            >img{
+                float: left;
+                margin-right: 2px;
+                // margin:0px;
+                height: 32px;
+                width: 32px;
+                border: 1px solid #CCCCCC;
+                cursor: pointer;
+            }
+        }
+        .listPrice{
+            color: #c00;
+            font-size: 14px;
+            font-weight: 700;
+            height: 20px;
+            line-height: 20px;
+        }
+        .listTitle{
+            font-size: 12px;
+            margin-top: 20px;
+            line-height: 1.5;
+            height: 36px;
+            overflow: hidden;
+            color: #666;
+        }
+        .sellTitle{
+            line-height: 20px;
+            color: #999;
+            .sell{
+                color: #c49173;
+                font-weight: bolder;
+            }
+        }
+        .reviewTitle{
+            margin-left: 30px;
+            padding-left: 10px;
+            color: #38b;
+            border-left: 1px solid #CDCDCD;
+            cursor: pointer;
+            :hover{
+                text-decoration: underline;
+            }
+        }
     }
 }
