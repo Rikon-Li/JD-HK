@@ -215,13 +215,18 @@
             $('.list').append(newGoods);
             var smallPics = '';
             $.each(val.smallPics,function(i, data){
-              console.log(data);
+              // console.log(data);
               smallPics += `<img src="${data}">`;
             })
             $(`.picNum${index}`).append(smallPics);
         })
         // console.log(json[0]);
       }
+    })
+
+
+    $(".list").on("click","div",function(){
+      $(location).attr('href', `./dysonDetails.html?index=${$(this).attr('index')}`);
     })
   </script>
 </body>

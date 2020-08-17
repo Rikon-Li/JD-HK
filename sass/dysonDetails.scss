@@ -12,12 +12,23 @@
         width: 460px;
 
         .sPicWrap {
+          position: relative;
           margin: 20px;
 
           img {
             width: 418px;
             height: 418px;
             border: 1px solid #F2F2F2;
+          }
+          .mask {
+            width: 175px;
+            height: 175px;
+            background: url('https://img-tmdetail.alicdn.com/tps/i4/T12pdtXaldXXXXXXXX-2-2.png');
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            cursor: move;
+            display: none;
           }
         }
 
@@ -27,6 +38,8 @@
           overflow: hidden;
 
           img {
+            width: 60px;
+            height: 60px;
             float: left;
             margin-right: 14px;
             border: 1px solid transparent;
@@ -46,8 +59,29 @@
       }
 
       .goodsSlc {
+        position: relative;
         margin-top: 20px;
         width: 510px;
+
+        .maxBox {
+          width: 418px;
+          height: 418px;
+          overflow: hidden;
+          border: 1px solid #ccc;
+          position: absolute;
+          top: 0;
+          left: -10px;
+          display: none;
+          img {
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            top: 0px;
+            left: 0px;
+          }
+        }
+        
+        
 
         .GB {
           color: #7a45e5;
@@ -225,6 +259,7 @@
               font-size: 16px;
               outline: 0;
               cursor: pointer;
+              z-index: -1;
             }
             .addCartBtn{
               margin-left: 10px;
@@ -248,10 +283,75 @@
 
 
     .sidebarWrap {
-      height: 500px;
+      // height: 500px;
       width: 200px;
-      background: #666;
+      .ald-hd{
+        position: relative;
+        height: 15px;
+        margin-top: 5px;
+        overflow: hidden;
+        s{
+          position: absolute;
+          top: 10px;
+          left: 30px;
+          width: 140px;
+          height: 0;
+          border-top: 1px #c9c9c9 dotted;
+          text-decoration: none;
+        }
+        span{
+          position: absolute;
+          color: #999;
+          text-align: center;
+          width: 6em;
+          top: 0;
+          left: 50%;
+          margin-left: -3em;
+          background-color: #fff;
+        }
+      }
+      .sideSwiper{
+        padding: 10px 12px 2px 13px;
+        position: relative;
+        .wrap{
+          height: 522px;
+          overflow: hidden;
+          .wrapCon{
+            overflow: hidden;
+            >div{
+              height: 174px;
+              img{
+                height: 140px;
+                width: 140px;
+                margin-left: 17px;
+              }
+            }
+            a{
+              display: inline-block;
+              height: 20px;
+              overflow: hidden;
+              color: #62574e;
+              &:hover{
+                color: #e22127;
+              }
+            }
+          }
+        }
+        
+        .swiperPage{
+          height: 30px;
+          width: 100%;
+          .iconfont{
+            margin-left: 40px;
+            line-height: 30px;
+            font-size: 25px !important;
+            color: #404040;
+          }
+        }
+      }
     }
   }
 
 }
+
+
