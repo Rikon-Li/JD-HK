@@ -1,6 +1,6 @@
 [{
-    "id":1,
-    "price":"¥2690.00",
+    "id":0,
+    "price":"2690.00",
     "title": "Dyson戴森吹风机原装进口HD03黑紫色/银白色负离子大功率正品保修",
     "pic": "https://img.alicdn.com/bao/uploaded/i1/2207680808017/O1CN01zrNU9P295psMreTHM_!!0-item_pic.jpg_430x430.jpg",
     "selectPics": [
@@ -17,8 +17,8 @@
     "review": 253
 },
 {
-    "id":2,
-    "price":"¥3690.00",
+    "id":1,
+    "price":"3690.00",
     "title": "Dyson戴森 Airwrap原装进口美发造型器自动卷发棒吹风机直发8头",
     "pic": "https://img.alicdn.com/bao/uploaded/i3/2207680808017/O1CN01hyYFfo295psNJpb61_!!0-item_pic.jpg_430x430.jpg",
     "selectPics": [

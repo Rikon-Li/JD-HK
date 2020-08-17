@@ -9,6 +9,7 @@ if (sname != null) {
     var sname_ = decodeURIComponent(sname);
     alert(sname_);
 }
+var index = GetQueryString('index');
 console.log(GetQueryString('index'));
 
 $.ajax({
@@ -17,9 +18,30 @@ $.ajax({
     data: " ",
     dataType: 'json',
     success: function (data) {
-        console.log(data);
+        console.log(data[index]);
+        $('.sPicWrap img').attr('src',data[index].pic);
+        
+        $(data[index].selectPics).each(function (index,pic) {  
+            $('.picSlcWrap').append(`<img
+            src="${pic}" class="picSlc">`);
+        })
+        $('.goodsTitle').html(`<span>${data[index].title}</span>`);
+        
+        $('.priceLine b').text(data[index].price);
+
+        $(data[index].smallPics).each(function (index,pic) {  
+            console.log(pic);
+            console.log($('.classify').get(0));
+            $('.classify').append(`<img
+            src="${pic}"
+            alt="">`);
+        })
+
+        
     }
-})
+});
+
+
 
 
 
@@ -171,8 +193,17 @@ $('.icon-up1').on("click", () => {
     movePrev();
 })
 
-$('.picSlcWrap img').on('click', function () {
-    console.log($(this).attr('src'));
+$('.picSlcWrap').on('click','img', function () {
+    // console.log($(this).attr('src'));
     $('.sPicWrap img').attr('src', $(this).attr('src'));
     $('.maxBox img').attr('src', $(this).attr('src'));
+})
+
+$('.quantityAdd').on('click',function(){
+    $('.quantity input').attr('value',Number($('.quantity input').attr('value'))+1)
+})
+$('.quantitySub').on('click',function(){
+    if($('.quantity input').attr('value')>1){
+        $('.quantity input').attr('value',Number($('.quantity input').attr('value'))-1)
+    }
 })
