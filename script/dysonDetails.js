@@ -10,34 +10,33 @@ if (sname != null) {
     alert(sname_);
 }
 var index = GetQueryString('index');
-console.log(GetQueryString('index'));
+// console.log(GetQueryString('index'));
 
 $.ajax({
     url: '../data/dysonDetails.json',
-    type: 'post',
+    type: 'get',
     data: " ",
     dataType: 'json',
     success: function (data) {
-        console.log(data[index]);
+        // console.log(data[index]);
         $('.sPicWrap img').attr('src',data[index].pic);
         
         $(data[index].selectPics).each(function (index,pic) {  
             $('.picSlcWrap').append(`<img
             src="${pic}" class="picSlc">`);
         })
+
         $('.goodsTitle').html(`<span>${data[index].title}</span>`);
         
         $('.priceLine b').text(data[index].price);
 
         $(data[index].smallPics).each(function (index,pic) {  
-            console.log(pic);
-            console.log($('.classify').get(0));
+            // console.log(pic);
+            // console.log($('.classify').get(0));
             $('.classify').append(`<img
             src="${pic}"
             alt="">`);
         })
-
-        
     }
 });
 
@@ -45,7 +44,7 @@ $.ajax({
 
 
 
-(function () {
+!(function () {
     function Magnify(options) {
         this.init(options);
     }

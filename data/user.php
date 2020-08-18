@@ -8,6 +8,7 @@ $pass = $_REQUEST['pass'];
 
 // 1.连接数据库
 $link = mysqli_connect('localhost','root','root','tmall_hk');
+// $link = mysqli_connect('localhost','tmall_hk','8M2je2FJj5FeKEhR','tmall_hk');
 if (!$link) {
     echo '{"err":0,"msg":"连接失败"}';
     die();
