@@ -1,3 +1,67 @@
-{
-   "list": ["口红","香水","雪花秀","爱丽小屋","面霜","气垫","迪奥","眼霜","洗面奶","防晒霜","香奈儿","悦诗风吟","唇膏"]
+{  
+   "listTitle": "最热HOT",
+   "list": ["口红","香水","雪花秀","爱丽小屋","面霜","气垫","迪奥","眼霜","洗面奶","防晒霜","香奈儿","悦诗风吟","唇膏"],
+   "modulePicTitle": "美容护肤热卖品牌",
+   "modulePic": "https://img.alicdn.com/tps/i4/TB16lmZXOqAXuNjy1XdSuuYcVXa.jpg",
+   "block1": {
+      "title": "零毛细致化妆水",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1NNt0lLBNTKJjSszeSuwu2VXa.jpg_220x10000Q75s50.jpg_.webp",
+      "price": "119.9",
+      "before": "139"
+   },
+   "block2": {
+      "title": "化妆粉扑双只装",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1NNt0lLBNTKJjSszeSuwu2VXa.jpg_220x10000Q75s50.jpg_.webp",
+      "price": "88",
+      "before": "103"
+   },
+   "block3": {
+      "title": "樱花焕白面膜",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1LK1kihuaVKJjSZFjSuwjmpXa.jpg_160x160Q75s50.jpg_.webp",
+      "price": "109",
+      "before": "248"
+   },
+   "block4": {
+      "title": "24h持久粉底液",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1gdJ_h2NNTKJjSspewu1SwpXa.png_160x160Q75s50.jpg_.webp",
+      "price": "69.9",
+      "before": "199"
+   },
+   "block5": {
+      "title": "断货王小金管",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1M7I1hLBNTKJjSszbSuuFrFXa.jpg_160x160Q75s50.jpg_.webp",
+      "price": "69",
+      "before": "158"
+   },
+   "sliderTitle": "美容护肤热卖品牌",
+   "slider1": [
+      ["韩国LG旗下彩妆","https://img.alicdn.com/imgextra/i1/2087474270/TB2fwfSiFXXXXbkXXXXXXXXXXXX_!!2087474270.png_110x90Q75s50.jpg_.webp"],
+      ["台湾面膜品牌","https://img.alicdn.com/tps/i3/TB1f.ixLFXXXXXdXVXXgu52HFXX-180-90.jpg_110x90Q75s50.jpg_.webp"],
+      ["韩国顶级药妆护肤","https://img.alicdn.com/tps/i2/TB1ZDaRLFXXXXcEXXXXgu52HFXX-180-90.jpg_110x90Q75s50.jpg_.webp"],
+      ["韩国知名药妆品牌","https://img.alicdn.com/bao/uploaded/TB1s0lTKVXXXXcOaXXXwu0bFXXX.png_110x90Q75s50.jpg_.webp"],
+      ["敏感肌肤护肤专家","https://img.alicdn.com/tfscom/i3/T1pvuoXblZXXXXXXXX-90-45.jpg_110x90Q75s50.jpg_.webp"],
+      ["韩国知名药妆品牌","https://img.alicdn.com/tfscom/TB1__EhHpXXXXbYaXXXwu0bFXXX.png_110x90Q75s50.jpg_.webp"],
+      ["韩国本土护肤品牌","https://img.alicdn.com/tfscom/TB1Xkv8HXXXXXbTaXXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["日本无添加护肤","https://img.alicdn.com/tfscom/i3/T1ygDUXgpeXXXQXDnq-90-45.png_110x90Q75s50.jpg_.webp"]
+   ],
+   "slider2": [
+      ["法国知名护肤品牌","https://img.alicdn.com/tfscom/i2/T1qgbrXddtXXXQXDnq-90-45.png_110x90Q75s50.jpg_.webp"],
+      ["日本高端护肤品牌","https://img.alicdn.com/tfscom/TB1PTmwGXXXXXczXFXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["法国专业药妆护肤品","https://img.alicdn.com/tfscom/T11tqRFjBbXXb1upjX.jpg_110x90Q75s50.jpg_.webp"],
+      ["韩国化妆品牌","https://img.alicdn.com/tfscom/TB1u7kqGVXXXXcoXFXXXXXXXXXX_110x90Q75s50.jpg_.webp"],
+      ["韩国药妆","https://img.alicdn.com/tfscom/TB1zzCaHXXXXXbMXVXXXXXXXXXX_110x90Q75s50.jpg_.webp"],
+      ["西班牙药妆第一品牌","https://img.alicdn.com/tfscom/TB1i3Q_HpXXXXadapXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["英国新鲜美妆品牌","https://img.alicdn.com/tfscom/TB12UtgGXXXXXbgaXXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["韩国甜美彩妆品牌","https://img.alicdn.com/tfscom/TB1PUqpIXXXXXXRXVXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"]
+   ],
+   "slider3": [
+      ["法国知名彩妆品牌","https://img.alicdn.com/tfscom/i4/T1AJbsXhllXXXQXDnq-90-45.png_110x90Q75s50.jpg_.webp"],
+      ["德国个人护理知名品牌","https://img.alicdn.com/tfscom/TB1AKUxHVXXXXXPXXXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["全球第一大个人清洁","https://img.alicdn.com/tfscom/i5/T1v9B3Xo0AXXb1upjX.jpg_110x90Q75s50.jpg_.webp"],
+      ["新加坡瘦身品牌","https://img.alicdn.com/tfscom/TB1ygM.GFXXXXX.XVXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["韩国植物萃取物化妆品","https://img.alicdn.com/tfscom/TB1WyEvGVXXXXanXpXXXXXXXXXX_110x90Q75s50.jpg_.webp"],
+      ["韩国Guerisson奇迹马油","https://img.alicdn.com/tfscom/TB1T29kHXXXXXa.XpXXXXXXXXXX_110x90Q75s50.jpg_.webp"],
+      ["韩国少女品牌化妆品","https://img.alicdn.com/tfscom/TB1.LtkGVXXXXbvXpXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["美国专业防晒品牌","https://img.alicdn.com/tfscom/T10TQSFOtaXXb1upjX.jpg_110x90Q75s50.jpg_.webp"]
+   ]
 }
