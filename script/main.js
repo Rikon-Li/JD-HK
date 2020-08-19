@@ -17,7 +17,7 @@ var mySwiper = new Swiper('.mainSwiper', {
     prevEl: '.swiper-button-prev',
   },
 })
-for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
+for (var i = 0; i < mySwiper.pagination.bullets.length; i++) {
   mySwiper.pagination.bullets[i].onmouseover = function () {
     this.click();
   };

@@ -6,18 +6,25 @@ const load = require('gulp-load-plugins')();
 const del = require('del');
 
 // 删除dist目录
-task('delDist',async ()=>{
+let delDist = async ()=>{
   await del('./dist');
-})
+}
 
 // 处理图片
-task('image', async ()=>{
+let image = async ()=>{
   src('./images/*.*')
   .pipe(dest('./dist/images'))
-})
+}
+
+// 处理数据
+let data = async ()=>{
+  src('./data/*.*')
+  .pipe(dest('./dist/data'))
+  .pipe(load.connect.reload())
+}
 
 // 处理sass
-task('sass', async ()=>{
+let sass = async ()=>{
   src('./sass/*.scss')
   .pipe(load.sassChina())
   .pipe(load.rev())
@@ -25,19 +32,19 @@ task('sass', async ()=>{
   .pipe(dest('./dist/styles'))
   .pipe(load.rev.manifest())
   .pipe(dest('./rev/styles'))
-})
+}
 
-task('css', async ()=>{
+let css = async ()=>{
   src('./styles/*.css')
   .pipe(load.rev())
   .pipe(load.minifyCss())
   .pipe(dest('./dist/styles'))
   .pipe(load.rev.manifest())
-  .pipe(dest('./rev/css'))
-})
+  .pipe(dest('./rev/styles'))
+}
 
 // 处理js
-task('script', async ()=>{
+let script = async ()=>{
   src('./script/*.js')
   .pipe(load.rev())
   .pipe(load.babel({presets: ['@babel/env']}))
@@ -45,32 +52,39 @@ task('script', async ()=>{
   .pipe(dest('./dist/script'))
   .pipe(load.rev.manifest())
   .pipe(dest('./rev/js'))
-})
+}
 
 // 处理html
-task('html', async ()=>{
-  src(['./rev/**/*.json','./pages/*.html'])
-  .pipe(load.revCollector({replaceReved:true}))
-  .pipe(load.minifyHtml())
-  .pipe(dest('./dist/pages'))
-})
+let html = async ()=>{
+  setTimeout(()=>{
+    src(['./rev/**/*.json','./pages/*.html'])
+    .pipe(load.revCollector({replaceReved:true}))
+    .pipe(load.minifyHtml())
+    .pipe(dest('./dist/pages'))
+  },2000)
+}
 
-// 监听文件变化
-// task('watch',async ()=>{
-//   watch('./image/*.*',series('image'));
-//   watch('./style/*.css',series('style'));
-//   watch('./script/*.js',series('script'));
-//   watch('./pages/*.html',series('html'));
-// })
+
 
 // 启动服务，自动刷新
-task('connect',async ()=>{
+let connect = async ()=>{
   load.connect.server({
     root: './dist',
     livereload: true,
     port: 3001
   });
-})
+}
 
 // 构建生产包
-task('build',series('delDist','image','css','sass','script','html','connect'))
+// task('build',series('delDist','image','data','css','sass','script','html','connect'))
+
+task('build', async()=>{
+  await delDist();
+  await css();
+  await sass();
+  await script();
+  await data();
+  await image();
+  await html();
+  await connect();
+})
