@@ -136,18 +136,13 @@ $.ajax({
 
 
 
-$('.item').hover(function () {
-  $(this).find('img').css('transform', 'translate(-5px)')
-}, function () {
-  $(this).find('img').css('transform', 'translate(5px)')
-})
 
 
 
 
 
 console.log(111);
-var mod = function(modNum){
+var mod = function(modNum,color){
   $.ajax({
     url: '../data/beauty.json',
     type: 'post',
@@ -156,14 +151,14 @@ var mod = function(modNum){
     success: function (data) {
       console.log(data[modNum]);
       var newDiv = `
-        <div class="beauty">
+        <div class="beauty"  style="border-top: 1px solid ${color}">
           <div class="moduleList float-l">
             <span>${data[modNum].listTitle}</span>
             <ul></ul>
           </div>
           <a class="modulePic float-l" href="">
             <img src="${data[modNum].modulePic}" alt="">
-            <div>
+            <div style="background: ${color}">
               <h3>${data[modNum].modulePicTitle}</h3>
               <p>查看更多&gt;</p>
             </div>
@@ -218,11 +213,11 @@ var mod = function(modNum){
           </div>
           <div class="moduleSwiperWrap float-l">
             <div class="title">
-              <span class="strong">BRAND</span>
+              <span class="strong" style="color: ${color}; border-bottom: 1px solid ${color};">BRAND</span>
               ${data[modNum].sliderTitle}
             </div>
             <div class="swiper-container moduleSwiper">
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper sli${modNum}">
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -251,7 +246,7 @@ var mod = function(modNum){
             </div>
           `)
         })
-        $('.swiper-wrapper').append(newSlider);
+        $(`.sli${modNum}`).append(newSlider);
         // console.log(document.querySelector('slider0'));
       })
   
@@ -267,9 +262,21 @@ var mod = function(modNum){
           clickable: true,
         }
       })
+
+
+
+
+      $('.item').hover(function () {
+        $(this).find('img').css('transform', 'translate(-5px)')
+      }, function () {
+        $(this).find('img').css('transform', 'translate(5px)')
+      })
+      
     }
   })
 }
 
-mod(0);
-mod(1);
+mod(0,'#E91853');
+mod(1,'#E32189');
+mod(2,'#EB514A');
+mod(3,'#65C025');

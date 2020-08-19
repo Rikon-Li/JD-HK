@@ -1,5 +1,4 @@
-[
-{  
+[{  
    "listTitle": "最热HOT",
    "list": ["口红","香水","雪花秀","爱丽小屋","面霜","气垫","迪奥","眼霜","洗面奶","防晒霜","香奈儿","悦诗风吟","唇膏"],
    "modulePicTitle": "美容护肤热卖品牌",
@@ -110,5 +109,115 @@
       ["爱茉莉旗下美发圣品","https://img.alicdn.com/tfs/TB16gTDblTH8KJjy0FiXXcRsXXa-70-35.jpg_110x90Q75s50.jpg_.webp"],
       ["LG韩方健康美发护理","https://img.alicdn.com/tfscom/TB1T0ETIpXXXXcNXpXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"]
    ]]
-}
-]
+},{  
+   "listTitle": "最热HOT",
+   "list": ["爱他美", "喜宝", "奶瓶", "纸尿裤", "牛栏", "衬衫", "嘉宝", "尤妮佳", "惠氏", "米粉", "辅食", "美素佳儿", "益生菌"],
+   "modulePicTitle": "疼爱宝宝多一点",
+   "modulePic": "https://img.alicdn.com/tps/i4/TB1POp6cf2H8KJjy1zkSutr7pXa.jpg",
+   "block1": {
+      "title": "喜宝小米米粉",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1MXvyoHsTMeJjSszhSuwGCFXa.jpg_220x10000Q75s50.jpg_.webp",
+      "price": "44.9",
+      "before": "45"
+   },
+   "block2": {
+      "title": "每日名作奶粉",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1hC9bmamgSKJjSspiSutyJFXa.jpg_160x160Q75s50.jpg_.webp",
+      "price": "458",
+      "before": "1188"
+   },
+   "block3": {
+      "title": "小熊糖多维190粒",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1hhqGkGagSKJjy0FaSuv0dpXa.jpg_160x160Q75s50.jpg_.webp",
+      "price": "198",
+      "before": "336"
+   },
+   "block4": {
+      "title": "郁金香安抚巾",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1FetNccGg21JjSZFySutIZVXa.jpg_160x160Q75s50.jpg_.webp",
+      "price": "179",
+      "before": "190"
+   },
+   "block5": {
+      "title": "时尚百搭T恤",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1dNPanwoQMeJjy1XaSuwSsFXa.jpg_160x160Q75s50.jpg_.webp",
+      "price": "319",
+      "before": "339"
+   },
+   "sliderTitle": "母婴用品热卖品牌",
+   "slider": [[
+      ["给宝宝更好的纸尿裤","https://img.alicdn.com/tfscom/T1.xOYFgVcXXb1upjX.jpg_110x90Q75s50.jpg_.webp"],
+      ["新西兰奶粉领导品牌","https://img.alicdn.com/tfscom/TB1PLAoGFXXXXadXVXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["荷兰奶粉领导品牌","https://img.alicdn.com/tfscom/TB1TOmBGFXXXXacXFXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["源自德国高端奶粉品牌","https://img.alicdn.com/tfscom/TB13boNGXXXXXX4XVXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["英国著名奶粉品牌","https://img.alicdn.com/tps/i1/TB1PeuVIXXXXXapXFXXjVgIJpXX-90-45.png_110x90Q75s50.jpg_.webp"],
+      ["日本尿裤领先品牌","https://img.alicdn.com/tfscom/T1yChsFEliXXb1upjX.jpg_110x90Q75s50.jpg_.webp"],
+      ["日本品质纸尿裤","https://img.alicdn.com/tfscom/T1kKJRFMBcXXb1upjX.jpg_110x90Q75s50.jpg_.webp"],
+      ["日本纸尿裤品牌","https://img.alicdn.com/tfscom/TB1HKdiGpXXXXXSapXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"]
+   ],[
+      ["德国品质奶粉辅食","https://img.alicdn.com/tfscom/TB1H67PFFXXXXc_XVXXwu0bFXXX.png_110x90Q75s50.jpg_.webp"],
+      ["荷兰高品质奶粉","https://img.alicdn.com/tps/TB1ydsmJXXXXXbZXXXXXXXXXXXX-90-45.jpg_110x90Q75s50.jpg_.webp"],
+      ["美国品牌优质奶源","https://img.alicdn.com/tfscom/T1fo9UFd4cXXb1upjX.jpg_110x90Q75s50.jpg_.webp"],
+      ["奶粉领先品牌","https://img.alicdn.com/tfscom/TB1.UKSHFXXXXcbXFXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["澳洲有机奶粉品牌","https://img.alicdn.com/tfscom/i2/2032939909/T2uEwVXO0XXXXXXXXX_!!2032939909.jpg_110x90Q75s50.jpg_.webp"],
+      ["婴幼儿辅食专家","https://img.alicdn.com/tfscom/TB1ABMXGpXXXXbKXXXXXXXXXXXX_110x90Q75s50.jpg_.webp"],
+      ["孕产妇DHA营养保健","https://img.alicdn.com/tps/i3/TB1RundIXXXXXalXXXXjVgIJpXX-90-45.png_110x90Q75s50.jpg_.webp"],
+      ["益生菌专家","https://img.alicdn.com/tps/i2/TB1Gfm9IXXXXXXNXpXXjVgIJpXX-90-45.png_110x90Q75s50.jpg_.webp"]
+   ],[
+      ["有机高铁辅食品牌","https://img.alicdn.com/tps/i4/TB1X3SQIXXXXXcTXFXXjVgIJpXX-90-45.png_110x90Q75s50.jpg_.webp"],
+      ["日本婴幼儿百年品牌","https://img.alicdn.com/tfscom/TB1NAX0GFXXXXXEXpXXSutbFXXX.jpg_110x90Q75s50.jpg_.webp"],
+      ["宝宝维生素D3补充","https://img.alicdn.com/tps/i2/TB1UCnLIXXXXXcwXXXXjVgIJpXX-90-45.png_110x90Q75s50.jpg_.webp"],
+      ["美国辅食领先品牌","https://img.alicdn.com/tfscom/i4/1986114036/T2OiITXL4XXXXXXXXX-1986114036.jpg_110x90Q75s50.jpg_.webp"],
+      ["宝贝天然护肤领先品牌","https://img.alicdn.com/tps/i3/TB1GqPJIXXXXXXIXpXXjVgIJpXX-90-45.png_110x90Q75s50.jpg_.webp"],
+      ["婴儿天然护肤品牌","https://img.alicdn.com/tps/i1/TB1_ZDSIXXXXXXEXXXXjVgIJpXX-90-45.png_110x90Q75s50.jpg_.webp"],
+      ["英国领先母婴护理品牌","https://img.alicdn.com/tfscom/T1.xOYFgVcXXb1upjX.jpg_110x90Q75s50.jpg_.webp"],
+      ["电子体温计","https://img.alicdn.com/tps/i3/TB1pNDAIXXXXXagXFXXF.MHJpXX-90-45.jpg_110x90Q75s50.jpg_.webp"]
+   ]]
+},
+{
+   "listTitle": "最热HOT",
+   "list": ["爱他美", "喜宝", "奶瓶", "纸尿裤", "牛栏", "衬衫", "嘉宝", "尤妮佳", "惠氏", "米粉", "辅食", "美素佳儿", "益生菌"],
+   "modulePicTitle": "美食多一点",
+   "modulePic": "https://img.alicdn.com/tps/i4/TB1rld2ch6I8KJjSszfSuuZVXXa.jpg",
+   "block1": {
+      "title": "水果麦片800g袋装",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1tcSgiWmgSKJjSsplSuuICpXa.jpg_220x10000Q75s50.jpg_.webp",
+      "price": "59.9",
+      "before": "99"
+   },
+   "block2": {
+      "title": "上等低脂纯燕1kg",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1NiOgo3oQMeJjy0FnSuv8gFXa.jpg_160x160Q75s50.jpg_.webp",
+      "price": "35.9",
+      "before": "198"
+   },
+   "block3": {
+      "title": "1kg*2袋水果麦片",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1EiwOkF9gSKJjSspbSuveNXXa.jpg_160x160Q75s50.jpg_.webp",
+      "price": "88.2",
+      "before": "396"
+   },
+   "block4": {
+      "title": "德运脱脂奶粉",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1ablWXaY85uJjSZFjSuv2VVXa.jpg_160x160Q75s50.jpg_.webp",
+      "price": "62",
+      "before": "158"
+   },
+   "block5": {
+      "title": "Finax麦片组合",
+      "pic": "https://img.alicdn.com/bao/uploaded/i1/TB1ruXfjzihSKJjy0FlSuudEXXa.jpg_160x160Q75s50.jpg_.webp",
+      "price": "75.5",
+      "before": "236"
+   },
+   "sliderTitle": "食品饮料热卖品牌",
+   "slider": [[
+      ["好市多自有品牌","https://img.alicdn.com/tps/i3/TB1xcW3IXXXXXaBXpXX92fPOFXX-264-132.jpg_110x90Q75s50.jpg_.webp"],
+      ["最好吃的牛轧糖","https://img.alicdn.com/tps/i2/TB15YuJIXXXXXXOXVXX92fPOFXX-264-132.jpg_110x90Q75s50.jpg_.webp"],
+      ["挑逗味蕾的精灵","https://img.alicdn.com/tps/i1/TB1TtK6IXXXXXXIXpXX92fPOFXX-264-132.jpg_110x90Q75s50.jpg_.webp"],
+      ["家人满意的成人奶","https://img.alicdn.com/tps/i3/TB1Hsa1IXXXXXbfXpXX92fPOFXX-264-132.jpg_110x90Q75s50.jpg_.webp"],
+      ["牛轧糖时尚品牌","https://img.alicdn.com/tps/i4/TB1h.iJIXXXXXXKXVXX92fPOFXX-264-132.jpg_110x90Q75s50.jpg_.webp"],
+      ["产自澳洲草原鲜奶","https://img.alicdn.com/tps/i3/TB1BPqYIXXXXXb3XpXX92fPOFXX-264-132.jpg_110x90Q75s50.jpg_.webp"],
+      ["我们都爱星爸爸","https://img.alicdn.com/tps/i2/TB1GpmPIXXXXXX3XFXX92fPOFXX-264-132.jpg_110x90Q75s50.jpg_.webp"],
+      ["德国超市亲选为你","https://img.alicdn.com/imgextra/i2/3075140505/TB2X0Eakt4opuFjSZFLXXX8mXXa_!!3075140505.jpg_110x90Q75s50.jpg_.webp"]
+   ]]
+}]
