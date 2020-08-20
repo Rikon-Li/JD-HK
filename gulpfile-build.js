@@ -31,7 +31,7 @@ let sass = async ()=>{
   .pipe(load.minifyCss())
   .pipe(dest('./dist/styles'))
   .pipe(load.rev.manifest())
-  .pipe(dest('./rev/styles'))
+  .pipe(dest('./rev/sass'))
 }
 
 let css = async ()=>{
@@ -40,7 +40,7 @@ let css = async ()=>{
   .pipe(load.minifyCss())
   .pipe(dest('./dist/styles'))
   .pipe(load.rev.manifest())
-  .pipe(dest('./rev/styles'))
+  .pipe(dest('./rev/css'))
 }
 
 // 处理js
@@ -61,10 +61,8 @@ let html = async ()=>{
     .pipe(load.revCollector({replaceReved:true}))
     .pipe(load.minifyHtml())
     .pipe(dest('./dist/pages'))
-  },2000)
+  },10000)
 }
-
-
 
 // 启动服务，自动刷新
 let connect = async ()=>{
